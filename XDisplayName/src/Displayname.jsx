@@ -19,7 +19,8 @@ export default function DisplayName(){
   }
   const handleFullName = (e) =>{
     e.preventDefault(); 
-    setFullName(`${firstname} ${lastname}`)
+    setFullName(`${firstname} ${lastname}`);
+    //console.log(e)
   };
     
   
@@ -40,10 +41,8 @@ export default function DisplayName(){
         <br />
         <button type="submit">Submit</button>
         <br />
-        {fullname && <p>Full Name: {fullname}</p>}
-        <div id="next" style={{ display: "none" }}></div>
-
       </form>
+      {fullname && <p>Full Name: {fullname}</p>}
       
     </>
   )
