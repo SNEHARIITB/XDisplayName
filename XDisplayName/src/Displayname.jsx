@@ -28,12 +28,12 @@ export default function DisplayName(){
       <form onSubmit={handleFullName}>
         <h1>Full Name Display</h1>
         <label htmlFor="firstname">First Name : </label>
-        <input  name="firstname" required
+        <input type= "text" name="firstname" required
           onChange={(e) => handleFirstNameChange(e.target.value)}
         />
         <br />
         <label htmlFor="lastname">Last Name : </label>
-        <input  name="lastname" 
+        <input type= "text" name="lastname" 
             required
            onChange={(e) => handleLastNameChange(e.target.value)}
         />
